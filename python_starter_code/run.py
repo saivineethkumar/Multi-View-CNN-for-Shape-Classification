@@ -14,5 +14,7 @@ model, info = trainMVShapeClassifier(train_path, cuda=False, verbose=False)
 # info = p.load( open( "info.p", "rb" ) )
 
 # TEST
+print("For Mean view pooling:")
 testMVImageClassifier(test_path, model, info, pooling='mean', cuda=False, verbose=False)
+print("For Max view pooling:")
 testMVImageClassifier(test_path, model, info, pooling='max', cuda=False, verbose=False)
