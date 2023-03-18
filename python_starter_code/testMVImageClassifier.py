@@ -49,8 +49,16 @@ def testMVImageClassifier(dataset_path, model, info, pooling = 'mean', cuda=Fals
             2) Implement 2 strategies: 1) mean and 2) max view-pooling by specifying input arg 'pooling', like
                >> pooling = 'mean' or pooling = 'max'
             
-             '''
-            predicted_label = 0 # obviously change this
+            '''            
+            # Shape of scores: (12,10) - 12views and each view has 10 values corresponding to each category label
+            if pooling == 'mean':
+                predicted_label = np.argmax(np.mean(scores, axis=0))
+            elif pooling == 'max':
+                predicted_label = np.argmax(np.amax(scores, axis=0))
+            else:
+                print("Wrong entry passed for pooling argument")
+                predicted_label = 0     #default value
+
             if predicted_label != idx:
                 test_err += 1
 
