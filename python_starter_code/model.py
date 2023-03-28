@@ -12,9 +12,8 @@ class CNN(nn.Module):
         # input image size = 1x112x112
 
         # convolution layer 1
-        self.conv1 = nn.Conv2d(1, 8, kernel_size=7, stride=1, padding=0, bias=True)
-        nn.init.kaiming_uniform_(self.conv1.weight, a=0.01, mode='fan_in', nonlinearity='leaky_relu')
-        nn.init.zeros_(self.conv1.bias)
+        self.conv1 = nn.Conv2d(1, 8, kernel_size=7, stride=1, padding=0, bias=False)
+        nn.init.kaiming_uniform_(self.conv1.weight)
         # layer normalization layer 1
         self.norm1 = nn.LayerNorm([8, 106, 106])
         # leaky ReLU layer 1
@@ -22,10 +21,10 @@ class CNN(nn.Module):
         # max pooling layer 1
         self.pool1 = nn.MaxPool2d(kernel_size=2, stride=2)
 
-
+        
         # depthwise convolution layer
         self.depthwise_conv = nn.Conv2d(8, 8, kernel_size=7, stride=2, padding=0, groups=8, bias=False)
-        nn.init.kaiming_uniform_(self.depthwise_conv.weight, a=0.01, mode='fan_in', nonlinearity='leaky_relu')
+        nn.init.kaiming_uniform_(self.depthwise_conv.weight)
         # layer normalization layer 2
         self.norm2 = nn.LayerNorm([8, 24, 24])
         # leaky ReLU layer 2
@@ -40,7 +39,7 @@ class CNN(nn.Module):
 
         # depthwise convolution layer
         self.depthwise_conv2 = nn.Conv2d(16, 16, kernel_size=7, stride=1, padding=0, groups=16, bias=False)
-        nn.init.kaiming_uniform_(self.depthwise_conv2.weight, a=0, mode='fan_in', nonlinearity='leaky_relu')
+        nn.init.kaiming_uniform_(self.depthwise_conv2.weight)
         # layer normalization layer 3
         self.norm3 = nn.LayerNorm([16, 6, 6])
         # leaky ReLU layer 3
