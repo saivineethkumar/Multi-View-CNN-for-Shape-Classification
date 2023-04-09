@@ -1,0 +1,68 @@
+Training Starting..
+Epoch [1/20], Loss: 1.5394, Top 1 Error: 0.529, Top 5 Error: 0.119
+Checkpoint saved to model/model_epoch_0.pth
+Epoch [2/20], Loss: 0.9880, Top 1 Error: 0.331, Top 5 Error: 0.032
+Checkpoint saved to model/model_epoch_1.pth
+Epoch [3/20], Loss: 0.8381, Top 1 Error: 0.284, Top 5 Error: 0.022
+Checkpoint saved to model/model_epoch_2.pth
+Epoch [4/20], Loss: 0.7527, Top 1 Error: 0.249, Top 5 Error: 0.019
+Checkpoint saved to model/model_epoch_3.pth
+Epoch [5/20], Loss: 0.6899, Top 1 Error: 0.226, Top 5 Error: 0.016
+Checkpoint saved to model/model_epoch_4.pth
+Epoch [6/20], Loss: 0.6454, Top 1 Error: 0.213, Top 5 Error: 0.015
+Checkpoint saved to model/model_epoch_5.pth
+Epoch [7/20], Loss: 0.6009, Top 1 Error: 0.194, Top 5 Error: 0.013
+Checkpoint saved to model/model_epoch_6.pth
+Epoch [8/20], Loss: 0.5657, Top 1 Error: 0.187, Top 5 Error: 0.012
+Checkpoint saved to model/model_epoch_7.pth
+Epoch [9/20], Loss: 0.5370, Top 1 Error: 0.173, Top 5 Error: 0.010
+Checkpoint saved to model/model_epoch_8.pth
+Epoch [10/20], Loss: 0.5133, Top 1 Error: 0.170, Top 5 Error: 0.009
+Checkpoint saved to model/model_epoch_9.pth
+Epoch [11/20], Loss: 0.4861, Top 1 Error: 0.158, Top 5 Error: 0.008
+Checkpoint saved to model/model_epoch_10.pth
+Epoch [12/20], Loss: 0.4647, Top 1 Error: 0.151, Top 5 Error: 0.008
+Checkpoint saved to model/model_epoch_11.pth
+Epoch [13/20], Loss: 0.4414, Top 1 Error: 0.143, Top 5 Error: 0.007
+Checkpoint saved to model/model_epoch_12.pth
+Epoch [14/20], Loss: 0.4241, Top 1 Error: 0.138, Top 5 Error: 0.006
+Checkpoint saved to model/model_epoch_13.pth
+Epoch [15/20], Loss: 0.4056, Top 1 Error: 0.130, Top 5 Error: 0.006
+Checkpoint saved to model/model_epoch_14.pth
+Epoch [16/20], Loss: 0.3835, Top 1 Error: 0.126, Top 5 Error: 0.005
+Checkpoint saved to model/model_epoch_15.pth
+Epoch [17/20], Loss: 0.3707, Top 1 Error: 0.120, Top 5 Error: 0.005
+Checkpoint saved to model/model_epoch_16.pth
+Epoch [18/20], Loss: 0.3566, Top 1 Error: 0.117, Top 5 Error: 0.005
+Checkpoint saved to model/model_epoch_17.pth
+Epoch [19/20], Loss: 0.3400, Top 1 Error: 0.108, Top 5 Error: 0.004
+Checkpoint saved to model/model_epoch_18.pth
+Epoch [20/20], Loss: 0.3219, Top 1 Error: 0.104, Top 5 Error: 0.003
+Checkpoint saved to model/model_epoch_19.pth
+For Mean view pooling:
+=>Testing...
+=>Loading shape data: bathtub
+=>Loading shape data: bed
+=>Loading shape data: chair
+=>Loading shape data: desk
+=>Loading shape data: dresser
+=>Loading shape data: monitor
+=>Loading shape data: night_stand
+=>Loading shape data: sofa
+=>Loading shape data: table
+=>Loading shape data: toilet
+Test error: 15.500000%
+
+For Max view pooling:
+=>Testing...
+=>Loading shape data: bathtub
+=>Loading shape data: bed
+=>Loading shape data: chair
+=>Loading shape data: desk
+=>Loading shape data: dresser
+=>Loading shape data: monitor
+=>Loading shape data: night_stand
+=>Loading shape data: sofa
+=>Loading shape data: table
+=>Loading shape data: toilet
+Test error: 20.000000%
